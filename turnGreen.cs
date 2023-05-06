@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class turnGreen : MonoBehaviour
 {
-    private Color purp;
+    private Color grn;
 
     // Start is called before the first frame update
     void Start()
     {
-      purp = new Color32(153, 50, 204, 255);
+      // To use any color just Google the (R,G,B,A) value
+      grn = new Color32(127, 255, 0, 255);
     }
 
     // Update is called once per frame
@@ -31,7 +32,7 @@ public class turnGreen : MonoBehaviour
       // https://docs.unity3d.com/ScriptReference/Renderer.html
 
       GetComponent<Renderer>().material.color = Color.green;
-      GameObject.FindWithTag("plat").GetComponent<Renderer>().material.color = purp;
+      GameObject.FindWithTag("plat").GetComponent<Renderer>().material.color = grn;
 
     }
 }
