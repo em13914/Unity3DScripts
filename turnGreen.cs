@@ -19,7 +19,7 @@ public class turnGreen : MonoBehaviour
         
     }
 
-    // Upon collision with another GameObject, this GameObject will reverse direction
+    // Upon collision with another GameObject, another GameObject will turn green
     private void OnTriggerEnter(Collider other)
     {
       // Use the Console to understand what your code is doing
