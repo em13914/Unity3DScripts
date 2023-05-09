@@ -11,15 +11,23 @@ public class ballTransform : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello World");
+	// Set the x,y,z rate of change here in the code instead of the Inspector
+	scaleChange = new Vector3(0.005f, 0.005f, 0.005f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //The operator += will add the values in scaleChange to the current scale values of the GameObject, so that the ball grows.
-	transform.localScale += scaleChange;
-		
-	//This tracks the exact Vector3 position of the sphere so you can add platforms and obstacles
-	Debug.Log("Sphere: " + transform.position);
+        if (transform.localScale.x < 10f)
+		{	
+			//The operator += will add the values in scaleChange to the current scale values of the GameObject, so that the ball grows.
+			transform.localScale += scaleChange;
+		}
+		else
+		{
+			Debug.Log("Max Size Achieved.");
+		}
+		//This tracks the exact Vector3 position of the sphere so you can add platforms and obstacles
+		Debug.Log("Sphere: " + transform.position);
     }
 }
