@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallTransform : MonoBehaviour
+public class ballTransform : MonoBehaviour
 {
     //This variable is public so that it will appear in the Inspector. The type of variable, Vector3, is a data type for holding three values.
     public Vector3 scaleChange;
