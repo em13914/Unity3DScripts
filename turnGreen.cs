@@ -26,7 +26,7 @@ public class turnGreen : MonoBehaviour
       Debug.Log("HIT DETECTED!");
 
       // Remove any material already on the GameObject
-      // GetComponent<Renderer>().material = null;
+      GetComponent<Renderer>().material = null;
 
       // Here's where you can find other ways you can change the renderer of any object
       // https://docs.unity3d.com/ScriptReference/Renderer.html
