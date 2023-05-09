@@ -25,14 +25,11 @@ public class turnGreen : MonoBehaviour
       // Use the Console to understand what your code is doing
       Debug.Log("HIT DETECTED!");
 
-      // Remove any material already on the GameObject
-      GetComponent<Renderer>().material = null;
-
-      // Here's where you can find other ways you can change the renderer of any object
-      // https://docs.unity3d.com/ScriptReference/Renderer.html
-
-      GetComponent<Renderer>().material.color = Color.green;
-      GameObject.FindWithTag("plat").GetComponent<Renderer>().material.color = grn;
-
+      // Remove any material already on the "lisa" GameObject then set the color to be green
+      GameObject.FindWithTag("lisa").GetComponent<Renderer>().material = null;
+      GameObject.FindWithTag("lisa").GetComponent<Renderer>().material.color = Color.green;
+	  //GameObject.FindWithTag("plat").GetComponent<Renderer>().material.color = grn;
     }
 }
+// Here's where you can find other ways you can change the renderer of any object
+// https://docs.unity3d.com/ScriptReference/Renderer.html
