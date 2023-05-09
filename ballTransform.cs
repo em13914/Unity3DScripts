@@ -19,15 +19,15 @@ public class ballTransform : MonoBehaviour
     void Update()
     {
         if (transform.localScale.x < 10f)
-		{	
-			//The operator += will add the values in scaleChange to the current scale values of the GameObject, so that the ball grows.
-			transform.localScale += scaleChange;
-		}
-		else
-		{
-			Debug.Log("Max Size Achieved.");
-		}
-		//This tracks the exact Vector3 position of the sphere so you can add platforms and obstacles
-		Debug.Log("Sphere: " + transform.position);
+	{	
+		//The operator += will add the values in scaleChange to the current scale values of the GameObject, so that the ball grows.
+		transform.localScale += scaleChange;
+	}
+	else
+	{
+		Debug.Log("Max Size Achieved.");
+	}
+	//This tracks the exact Vector3 position of the sphere so you can add platforms and obstacles
+	Debug.Log("Sphere: " + transform.position);
     }
 }
