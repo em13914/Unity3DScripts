@@ -31,5 +31,5 @@ public class upDownPlatform : MonoBehaviour
       {
         //just chill
       }
-	}
+    }
 }
