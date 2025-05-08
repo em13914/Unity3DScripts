@@ -27,9 +27,5 @@ public class upDownPlatform : MonoBehaviour
       {
         positionChange = new Vector3(0, 1, 0); //move the platform UP
       }
-      else
-      {
-        //just chill
-      }
     }
 }
