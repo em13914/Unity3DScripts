@@ -3,7 +3,7 @@ using UnityEngine;
 public class ApplyForce : MonoBehaviour
 {
     // Choose a direction and speed for the force you want to apply
-    private Vector3 force = new Vector3(0f, 0f, 0f); // Set your direction and speed here
+    private Vector3 force = new Vector3(0f, 0f, 0f);
 
     void FixedUpdate()
     {
