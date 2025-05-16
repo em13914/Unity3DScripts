@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class upDownPlatform : MonoBehaviour
+public class ElevatorUpDown : MonoBehaviour
 {
     //declare your variable
     public Vector3 positionChange;
