@@ -2,18 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class attachScript : MonoBehaviour
+public class AttachScript : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-	
     // onTriggerEnter is called when the detectionZone is entered
     private void OnTriggerEnter(Collider other)
     {
