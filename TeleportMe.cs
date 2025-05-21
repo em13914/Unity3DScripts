@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class teleportMe : MonoBehaviour
+public class TeleportMe : MonoBehaviour
 {
     public Vector3 targetPosition; // The position where you want the sphere to move
 
